@@ -12,7 +12,7 @@ const app = new Hono<{
 app.use(
   "/api/*",
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://server.aydevay.workers.dev", "http://localhost:5173"],
     allowHeaders: [
       "Content-Type",
       "Authorization",
